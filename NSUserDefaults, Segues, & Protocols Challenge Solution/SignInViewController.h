@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SignInViewController.h
 //  NSUserDefaults, Segues, & Protocols Challenge Solution
 //
 //  Created by Joe Lucero on 7/14/15.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SignInViewController : UIViewController
 
 @end
 

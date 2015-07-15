@@ -25,7 +25,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-Kt-aXp">
                                 <rect key="frame" x="56" y="187" width="488" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lu-KI-xMa">
                                 <rect key="frame" x="281" y="258" width="38" height="30"/>
@@ -59,6 +59,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="passwordTF" destination="ufo-Kt-aXp" id="5KG-9x-eGi"/>
+                        <outlet property="usernameTF" destination="GIM-EZ-tBZ" id="geA-gx-1wg"/>
                         <segue destination="MV3-VW-lNW" kind="presentation" identifier="loginWasSuccessful" id="1Uz-Fw-ff8"/>
                     </connections>
                 </viewController>
@@ -66,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="1284" y="464"/>
         </scene>
-        <!--View Controller-->
+        <!--Success Screen View Controller-->
         <scene sceneID="lBb-P7-yvh">
             <objects>
-                <viewController id="MV3-VW-lNW" sceneMemberID="viewController">
+                <viewController id="MV3-VW-lNW" customClass="SuccessScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lqq-Yr-68M"/>
                         <viewControllerLayoutGuide type="bottom" id="OGo-SX-QPT"/>
@@ -84,11 +86,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcw-tv-gNO">
+                                <rect key="frame" x="270" y="334" width="60" height="30"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackButtonPressed:" destination="MV3-VW-lNW" eventType="touchUpInside" id="cgs-44-JlA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="c9E-FC-Og8" secondAttribute="centerX" id="2cH-xt-mWt"/>
                             <constraint firstAttribute="centerY" secondItem="c9E-FC-Og8" secondAttribute="centerY" id="QCA-ja-qcM"/>
+                            <constraint firstAttribute="centerX" secondItem="qcw-tv-gNO" secondAttribute="centerX" id="eLY-DZ-FkC"/>
+                            <constraint firstItem="qcw-tv-gNO" firstAttribute="top" secondItem="c9E-FC-Og8" secondAttribute="bottom" constant="8" id="fZJ-i5-PJZ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -136,12 +150,12 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yCy-E9-ojo">
                                 <rect key="frame" x="56" y="187" width="488" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-rp-uNU">
                                 <rect key="frame" x="56" y="253" width="488" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

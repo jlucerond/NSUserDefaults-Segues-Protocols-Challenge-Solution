@@ -13,11 +13,13 @@
 @required
 
 - (void) userDidSuccessfullyCreateAnAccount : (NSDictionary *) user;
+- (void) userDidCancelCreateAnAccount;
 
 @end
 
 @interface CreateAccountViewController : UIViewController
 
 @property (weak, nonatomic) id <CreateAccountViewControllerDelegate> delegate;
+@property (strong, nonatomic) NSArray *listOfUsernames;
 
 @end

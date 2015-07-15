@@ -15,6 +15,7 @@
 		D83A13D61B5592DC00AA8A39 /* NSUserDefaults__Segues____Protocols_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A13D51B5592DC00AA8A39 /* NSUserDefaults__Segues____Protocols_Challenge_SolutionTests.m */; };
 		D83A13E01B55943B00AA8A39 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D83A13DF1B55943B00AA8A39 /* Launch Screen.xib */; };
 		D83A13E31B55951200AA8A39 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A13E21B55951200AA8A39 /* CreateAccountViewController.m */; };
+		D83A13E61B569BFC00AA8A39 /* SuccessScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83A13E51B569BFC00AA8A39 /* SuccessScreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		D83A13DF1B55943B00AA8A39 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		D83A13E11B55951200AA8A39 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
 		D83A13E21B55951200AA8A39 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		D83A13E41B569BFC00AA8A39 /* SuccessScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessScreenViewController.h; sourceTree = "<group>"; };
+		D83A13E51B569BFC00AA8A39 /* SuccessScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessScreenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				D83A13C11B5592DC00AA8A39 /* SignInViewController.m */,
 				D83A13E11B55951200AA8A39 /* CreateAccountViewController.h */,
 				D83A13E21B55951200AA8A39 /* CreateAccountViewController.m */,
+				D83A13E41B569BFC00AA8A39 /* SuccessScreenViewController.h */,
+				D83A13E51B569BFC00AA8A39 /* SuccessScreenViewController.m */,
 				D83A13C31B5592DC00AA8A39 /* Main.storyboard */,
 				D83A13DF1B55943B00AA8A39 /* Launch Screen.xib */,
 				D83A13C61B5592DC00AA8A39 /* Images.xcassets */,
@@ -227,6 +232,7 @@
 				D83A13E31B55951200AA8A39 /* CreateAccountViewController.m in Sources */,
 				D83A13C21B5592DC00AA8A39 /* SignInViewController.m in Sources */,
 				D83A13BF1B5592DC00AA8A39 /* AppDelegate.m in Sources */,
+				D83A13E61B569BFC00AA8A39 /* SuccessScreenViewController.m in Sources */,
 				D83A13BC1B5592DC00AA8A39 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

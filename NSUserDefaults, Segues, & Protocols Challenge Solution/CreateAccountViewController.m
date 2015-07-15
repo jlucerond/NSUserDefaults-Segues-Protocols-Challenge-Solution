@@ -50,10 +50,10 @@
     
     else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!"
-                                                       message:@"Password & Confirm Password Don't Match"
-                                                      delegate:self
-                                             cancelButtonTitle:@"Try Again"
-                                             otherButtonTitles:nil];
+                                                        message:@"Password & Confirm Password Don't Match"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Try Again"
+                                              otherButtonTitles:nil];
         [alert show];
     }
 }

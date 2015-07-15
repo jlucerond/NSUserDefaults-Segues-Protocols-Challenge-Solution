@@ -38,9 +38,9 @@
     NSArray *usersAsPropertyLists = [[NSUserDefaults standardUserDefaults] arrayForKey:USERS_IN_DATABASE_KEY];
     for (NSDictionary *user in usersAsPropertyLists) {
         NSString *username = [user objectForKey:@"username"];
+        NSString *passwordForThisUsername = [user objectForKey:@"password"];
         if ([self.usernameTF.text isEqualToString:username]){
             usernamePresentInDataBase = true;
-            NSString *passwordForThisUsername = [user objectForKey:@"password"];
             if ([self.passwordTF.text isEqualToString:passwordForThisUsername]){
                 passwordDoesMatchUsername = true;
                 [self performSegueWithIdentifier:@"loginWasSuccessful" sender:sender];
